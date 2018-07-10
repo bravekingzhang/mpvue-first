@@ -1,6 +1,6 @@
 import Vue from "vue";
 import App from "./App";
-
+import {network} from "./utils/network-util";
 Vue.config.productionTip = false;
 App.mpType = "app";
 

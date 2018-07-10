@@ -17,7 +17,10 @@ class Network {
       this.fly.config.baseURL = baseUrl;
       this.tokenFly = new Fly();
       this.tokenFly.config = this.fly.config;
+      this.hackFly = new Fly();
+      this.hackFly.config = this.fly.config;
       Vue.prototype.http = this.fly;
+      Vue.prototype.hackHttp = this.hackFly;
       this.init_request_interceptors();
       this.init_response_interceptors();
     }

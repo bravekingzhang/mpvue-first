@@ -1,5 +1,5 @@
 <template>
-  <div class="container"  @click="clickHandle('test click', $event)">
+  <div class="container" @click.stop="clickHandle('test click', $event)">
 
     <div class="userinfo" @click="bindViewTap">
       <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover"/>
@@ -25,7 +25,7 @@
 
 <script>
   import card from "@/components/card";
-  import { network } from "../../utils/network-util";
+  import loadingMore from "@/components/loading-more";
 
   export default {
     data() {
@@ -36,7 +36,8 @@
     },
 
     components: {
-      card
+      card,
+      loadingMore
     },
 
     methods: {
@@ -104,4 +105,5 @@
     color: blue;
     border: 1px solid blue;
   }
+
 </style>

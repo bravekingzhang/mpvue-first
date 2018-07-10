@@ -4,7 +4,6 @@
     <p>
       <button @click="increment">+</button>
       <button @click="decrement">-</button>
-      <button @click="network">-</button>
     </p>
 
     <a href="/pages/index/main" class="home">去往首页</a>
@@ -27,14 +26,6 @@
       },
       decrement() {
         store.commit("decrement");
-      },
-      network() {
-        this.http.get("/api/xiandu/categories")
-          .then(function(d) {
-            console.log("请求成功:", d);
-          }).catch(function(e) {
-          console.log("请求失败", e);
-        });
       }
     }
   };

@@ -1,7 +1,7 @@
 {
 	"description": "项目配置文件。",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": false,
 		"postcss": true,
 		"minified": true,
@@ -9,8 +9,9 @@
 	},
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
-	"appid": "wx961717d0a869bfd8",
+	"appid": "wx206e969ae511aa81",
 	"projectname": "mpvue-first",
+	"libVersion": "2.0.4",
 	"condition": {
 		"search": {
 			"current": -1,
